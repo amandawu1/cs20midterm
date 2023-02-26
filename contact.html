@@ -1,0 +1,74 @@
+<html>
+<head>
+        <link rel="stylesheet" type = "text/css" href="style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Stationary by Amanda </title>
+        <style>
+                .background-image {
+                        position: relative;
+                        text-align: center;
+                        font-family:'Courier New', Courier, monospace;
+                        font-style:light; 
+                        letter-spacing: .3rem;
+                        color: #19551b;
+                }
+                
+                .overlay-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                }
+
+                .topnav {
+                        width: 324px;
+                }
+        </style>
+</head>
+
+<div class="background-image">
+        <img src="header.jpeg" alt="paper background" width="100%">
+        <div class="overlay-text">
+                <br><h1><a class="active" href="index.html"> Stationary by Amanda </a></h1> <br>
+                <div class="topnav">
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a class="active" href="contact.html">Contact</a>
+                </div> <br>
+        </div>
+</div>
+<br><h2> Contact </h2> <br>
+<body>
+        <table class="contact">
+                <tr>
+                        <td><label for="fname">First Name</label></td> 
+                        <td><input type="text" id="fname" name="firstname" placeholder="First name"></td>
+                </tr>
+                <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input type="text" id="lname" name="lastname" placeholder="Last name"> </td>
+                </tr>
+                <tr>
+                        <td><label for="comments">Comments</label></td>
+                        <td><textarea id="comments" name="comments" placeholder="Write something.."></textarea></td> 
+                </tr>
+                <tr>
+                        <td><input type="submit" value="Submit"></td>
+                </tr>
+                <br>
+        </table>
+</body>
+
+<footer>
+        <div class="footer">
+                <br>
+                <h6> Join our email list! </h6>
+                <form class="email-list">
+                        <label for="email">Email</label>
+                        <input type="email"  name="email">
+
+                        <input type="join" value="Join">
+                </form>
+                <br><br>
+</footer>
+</html>

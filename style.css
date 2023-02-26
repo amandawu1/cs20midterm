@@ -1,0 +1,215 @@
+h1 {
+        text-align:center; 
+        font-family:'Courier New', Courier, monospace;
+        font-style:light; 
+        letter-spacing: .3rem;
+        color: #19551b; }
+
+h1 a { 
+        text-decoration: none; 
+        color: #19551b; }
+
+.topnav {
+        background-color: #eaacac;
+        overflow: hidden;
+        width: 324px;
+        margin: auto;
+        letter-spacing: .3rem;
+        font-family: "courier", slab-serif;
+}
+
+.topnav a {
+        float: left;
+        color: #514d4d;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+}
+
+.topnav a:hover {
+        background-color: #eccece;
+        color: rgb(137, 42, 42);
+}
+
+.topnav a.active {
+        background-color: #963232;
+        color: white;
+}
+
+
+h2 {
+        text-align:center;
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        padding: 10px;
+}
+
+.middle {
+        background-color: #f7f3f3;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+h6 {
+        text-align:center;
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        padding: 10px;
+        font-size: medium;
+}
+
+.table-desktop {
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+        width: 100%;
+}
+
+.table-mobile {
+        display: none;
+}
+
+table img {
+        aspect-ratio: 1 / 1;
+}
+
+figcaption {
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+        padding: 18px; 
+}
+
+label {
+        margin-left: 15%;
+        text-align: left;
+        font-family:'Courier New', Courier, monospace;
+}
+
+input[type=text], select, textarea {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        margin-left: 5%;
+        margin-right: 20%;
+        letter-spacing: .1rem;
+        font-family:'Courier New', Courier, monospace;
+      }
+
+textarea[name=comments] {
+        width: 100%;
+        height: 150px;
+        padding: 12px; 
+        border: 1px solid #ccc
+        border-radius: 4px; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        margin-left: 5%;
+        margin-right: 20%;
+        letter-spacing: .1rem;
+        text-align: left;
+        font-family:'Courier New', Courier, monospace;
+}
+
+input[type=email], select, textarea {
+        text-align: left;
+        width: 20%; 
+        height: 7px;
+        padding: 20px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        margin-left: 5px;
+}
+
+input[type=submit] {
+        background-color: #226a50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 100px;
+        cursor: pointer;
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+}
+
+input[type=submit]:hover {
+        background-color: #19551b;
+}
+
+input[type=join] {
+        background-color: #226a50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 50px;
+        cursor: pointer;
+        font-family:'Courier New', Courier, monospace;
+        letter-spacing: .1rem;
+        width: 80px;
+}
+
+input[type=join]:hover {
+        background-color: #19551b;
+}
+
+.contact {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding: 20px;
+        width: 60%;
+}
+
+.footer {
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+        background-color: #eaacac;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.email-list {
+        margin-left: auto;
+        margin-right: auto;
+}
+
+@media(max-width:400px) {
+        h1 {
+                margin-top: 80px;
+                font-size: 15px;
+        }
+        h2 {
+                margin-top: 50px;
+        }
+        .table-mobile {
+                display: block;
+        }
+        .table-desktop {
+                display: none;
+        }
+        label {
+                margin-left: 1px;
+        }
+        input[type=join] {
+                margin-left: 1px;
+        }
+        input[type=text], select, textarea {
+                width: 100%;
+        }
+        textarea[name=comments] {
+                width: 100%;
+                margin-left: 0px;
+        }
+        input[type=submit] {
+                margin-left: 0px;
+        }
+}
