@@ -1,21 +1,57 @@
 h1 {
-        text-align:center; 
-        font-family:'Courier New', Courier, monospace;
-        font-style:light; 
+        text-align: left; 
+        font-family: 'Source Sans Pro', 'PT Sans', 'Lato', 'Open Sans' 'Work Sans', sans-serif;
+        font-style: bold; 
         letter-spacing: .3rem;
-        color: #19551b; }
+        color: #18124b;
+        font-size: 30px;
+        margin-left: 5%;
+}
 
 h1 a { 
         text-decoration: none; 
-        color: #19551b; }
+        color: #18124b; 
+}
+
+h3 {
+        text-align: left; 
+        font-family: 'Source Sans Pro', 'PT Sans', 'Lato', 'Open Sans' 'Work Sans', sans-serif;
+        font-style: light; 
+        line-height: 1.5;
+        color: #18124b;
+        font-size: 20px;
+        margin-left: 10%;
+        width: 60%;
+}
+.navbar {
+        /* flex-direction: row; */
+        display: flex;
+
+        margin: 20px;
+}
+
+
 
 .topnav {
-        background-color: #eaacac;
+        /* margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;*/
+        width: 100%;
+        /* justify-content: "flex-end"; */
+        float: right;
+        
+        background-color: beige;
+
         overflow: hidden;
-        width: 324px;
+        /* text-align: right; */
+        /* width: 40%; */
         margin: auto;
-        letter-spacing: .3rem;
-        font-family: "courier", slab-serif;
+        font-size: 15px;
+        letter-spacing: .2rem;
+        font-family: 'Source Sans Pro', 'PT Sans', 'Lato', 'Open Sans' 'Work Sans', sans-serif;
 }
 
 .topnav a {
@@ -98,7 +134,7 @@ input[type=text], select, textarea {
         margin-right: 20%;
         letter-spacing: .1rem;
         font-family:'Courier New', Courier, monospace;
-      }
+}
 
 textarea[name=comments] {
         width: 100%;
@@ -172,7 +208,7 @@ input[type=join]:hover {
 .footer {
         font-family:'Courier New', Courier, monospace;
         text-align: center;
-        background-color: #eaacac;
+        background-color: #18124b;
         margin-left: auto;
         margin-right: auto;
 }
@@ -213,3 +249,4 @@ input[type=join]:hover {
                 margin-left: 0px;
         }
 }
+
