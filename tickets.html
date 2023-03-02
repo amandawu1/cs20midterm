@@ -1,16 +1,244 @@
 
 <html>
-<head>
-        <link rel="stylesheet" type = "text/css" href="style.css"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Perspectives </title>
-</head>
-<br>
-        <h1><a class="active" href="index.html"> Perspectives </a></h1>
-<br>
+    <head>
+            <link rel="stylesheet" type = "text/css" href="nav_and_footer.css"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title> Perspectives </title>
 
-<div class="topnav">
-        <a href="about.html">About Us</a>
-        <a href="tickets.html">Tickets</a>
-        <a href="collections.html">Collections</a>
-</div> <br>
+
+
+            <!-- css here -->
+            <style>
+
+                .container {
+                    font-size: 0; /* This removes the space between the inline-block elements */
+                }
+
+                .column {
+                display: inline-block;
+                width: 33.33%; /* This sets each column to be one-third of the container width */
+                padding: 20px;
+                box-sizing: border-box;
+                background-color: #f2f2f2;
+                text-align: center;
+                font-size: 16px; /* Set the font size back to normal */
+                vertical-align: top; /* This aligns the columns to the top */
+                height: 100%; /* covers the entire page*/
+
+
+                /* background-color:red; */
+                }
+
+                .image {
+                    width: 100%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+
+                body {
+                    z-index:1;
+                    /*
+                        BUGGG comment this out and the column is not covering
+                        the entire page so try to fix but I think this should work for
+                        now
+                    */
+                    background-color: #f2f2f2;
+                }
+                footer {
+                    clear: both;
+                    position: relative;
+                    /* margin-top: 100px; */
+                    padding-top: 8%; /* or adjust as needed */
+
+                }
+            </style>
+
+
+    </head>
+
+    <!-- Top Nav -->
+    <header>
+        <div class="navbar">
+                <div class="logo">
+                        <a href="index.html"><h1>Perspectives.</h1></a>
+                </div>
+        
+                <div class="links normal-text">
+                        <a href="collections.html">Collections</a>
+                        <a href="about.html">About</a>
+                        <a href="tickets.html">Visit</a>
+                        <a href="support.html">Support Us</a>
+                        <a class="menu" onclick="openNav() ">&#9776</a>
+                </div> 
+        </div> 
+        <!-- mobile nav -->
+        <div id="mobileNav" class="overlay ">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content ">
+                        <a href="collections.html">Collections</a>
+                        <a href="about.html">About</a>
+                        <a href="tickets.html">Visit</a>
+                        <a href="support.html">Support Us</a>
+                </div>
+        </div>
+        <script>
+                /* Open when someone clicks on the span element */
+                function openNav() {
+                        document.getElementById("mobileNav").style.width = "100%";
+                }
+
+                /* Close when someone clicks on the "x" symbol inside the overlay */
+                function closeNav() {
+                        document.getElementById("mobileNav").style.width = "0%";
+                }
+        </script>
+</header>
+
+    <body>
+
+        <div class="container">
+            <div class="column">
+                <h2> General Admission ($10)</h2>
+
+                <img src="museum.jpg" alt="museum" class="image">
+
+                <ul>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            The general admission ticket grants entry to the museum for the entirety
+                            of its regular operating hours on the day of the visit. However, it does
+                            not provide access to special exhibitions that require a separate ticket.
+                        </p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            You can buy tickets either in person (subject to exhibition
+                            ticket availability) or in advance on (INSERT WEBSITE).org or by calling
+                            1-800-394-7175. Please note that all phone orders are subject
+                            to a $6 processing fee per order.
+                        </p>
+                    </li>
+                    <li>
+                        <p style="font-size: 20px;"> 
+                            Entry time slots are 30 minutes; visitors must enter the exhibition
+                            within that 30-minute window.
+                        </p>
+                    </li>
+                    <li>
+                        <p style="font-size: 20px;"> 
+                            No re-entry into a special exhibition.
+                        </p>
+                    </li>
+                    <li>
+                        <p style="font-size: 20px;"> 
+                            Visitors are required to enter the exhibition within a 30-minute
+                            time slot assigned to them.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="column">
+                <h2> Deluxe Admission ($20) </h2>
+
+                <img src="deluxe.jpg" alt="deluxe" class="image">
+
+                <ul>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Skip the line and enter the museum immediately.
+                        </p>
+                    </li>
+
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Get a more in-depth and engaging experience through
+                            a guided tour who will answer any questions you may have
+                            about the meaning or history of the art work.
+                        </p>
+                    </li>
+
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Gift shop discounts
+                        </p>
+                    </li>
+
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Entry and ability to switch into one of our three running events
+                            <ul>
+                                <li style="font-size: 20px;"> 1 hour art lesson under an instructor.</li>
+                                <li style="font-size: 20px;"> 1 hour lecture from a current indegenous artist</li>
+                                <li style="font-size: 20px;"> 1 hour food entry to food banquet featuring indigenous foods</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="column">
+                <h2> Discounted Admission Programs </h2>
+                <img src="save_money.jpg" alt="discount" class="image">
+            
+                <ul>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Students, faculty, and staff from participating colleges
+                            and universities can obtain free general admission tickets
+                            and special exhibition tickets by presenting a valid student
+                            or faculty ID in person. This offer cannot be redeemed in advance.
+                        </p>
+                    </li>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            K-12 teachers who are currently working in a school, after-school 
+                            program, or community setting in Massachusetts, Connecticut, 
+                            Maine, New Hampshire, Rhode Island, and Vermont can receive a 
+                            discounted general admission ticket for $15 by showing proof of 
+                            their active teaching status. Timed tickets for select special 
+                            exhibitions are available for an additional $7. To receive this 
+                            discount, teachers can present their school ID or a letter from 
+                            their principal or director at any ticket desk.
+                        </p>
+                    </li>
+                    <li> 
+                        <p style="font-size: 20px;">
+                            Active duty military and veterans of the United States
+                            are eligible for free general admission tickets for 
+                            themselves and up to five guests, as well as $7 special
+                            exhibition tickets, when presenting their military or 
+                            veteran ID in person. This offer cannot be redeemed in
+                            advance.
+                        </p>
+                    </li>
+                </ul>
+        
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="footer">
+                <div class="footer-center-container">
+                        <div class="footer-learn-more large-text">Learn more</div>
+                        <div class="footer-buttons-container">
+                                <a class="footer-button1 normal-text" href=".html">
+                                        Contact Us
+                                </a>
+                                <a class="footer-button2 normal-text" href=".html">
+                                        Blog
+                                </a>
+                        </div>
+                </div>
+        </div>
+    </footer>
+
+
+</html>
